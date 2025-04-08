@@ -1,48 +1,27 @@
-Let&#39;s define a function `countUniqueChars(s)` that returns the number of unique characters in&nbsp;`s`.
-
-
-	For example, calling `countUniqueChars(s)` if `s = &quot;LEETCODE&quot;` then `&quot;L&quot;`, `&quot;T&quot;`, `&quot;C&quot;`, `&quot;O&quot;`, `&quot;D&quot;` are the unique characters since they appear only once in `s`, therefore `countUniqueChars(s) = 5`.
-
-
+Let's define a function `countUniqueChars(s)` that returns the number of unique characters in `s`.
+ For example, calling `countUniqueChars(s)` if `s = "LEETCODE"` then `"L"`, `"T"`, `"C"`, `"O"`, `"D"` are the unique characters since they appear only once in `s`, therefore `countUniqueChars(s) = 5`.
 Given a string `s`, return the sum of `countUniqueChars(t)` where `t` is a substring of `s`. The test cases are generated such that the answer fits in a 32-bit integer.
-
 Notice that some substrings can be repeated so in this case you have to count the repeated ones too.
-
-&nbsp;
+ 
 Example 1:
-
 ```
-
-Input: s = &quot;ABC&quot;
+Input: s = "ABC"
 Output: 10
-Explanation: All possible substrings are: &quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;AB&quot;,&quot;BC&quot; and &quot;ABC&quot;.
+Explanation: All possible substrings are: "A","B","C","AB","BC" and "ABC".
 Every substring is composed with only unique letters.
 Sum of lengths of all substring is 1 + 1 + 1 + 2 + 2 + 3 = 10
-
 ```
-
 Example 2:
-
 ```
-
-Input: s = &quot;ABA&quot;
+Input: s = "ABA"
 Output: 8
-Explanation: The same as example 1, except `countUniqueChars`(&quot;ABA&quot;) = 1.
-
+Explanation: The same as example 1, except `countUniqueChars`("ABA") = 1.
 ```
-
 Example 3:
-
 ```
-
-Input: s = &quot;LEETCODE&quot;
+Input: s = "LEETCODE"
 Output: 92
-
 ```
 
-&nbsp;
 Constraints:
-
-
-	`1 &lt;= s.length &lt;= 105`
-	`s` consists of uppercase English letters only.
+- 1 <= s.length <= 10^5

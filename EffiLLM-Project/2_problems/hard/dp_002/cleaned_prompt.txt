@@ -1,35 +1,21 @@
 You are given a 2D array of integers `envelopes` where `envelopes[i] = [wi, hi]` represents the width and the height of an envelope.
-
-One envelope can fit into another if and only if both the width and height of one envelope are greater than the other envelope&#39;s width and height.
-
+One envelope can fit into another if and only if both the width and height of one envelope are greater than the other envelope's width and height.
 Return the maximum number of envelopes you can Russian doll (i.e., put one inside the other).
-
 Note: You cannot rotate an envelope.
-
-&nbsp;
+ 
 Example 1:
-
 ```
-
 Input: envelopes = [[5,4],[6,4],[6,7],[2,3]]
 Output: 3
-Explanation: The maximum number of envelopes you can Russian doll is `3` ([2,3] =&gt; [5,4] =&gt; [6,7]).
-
+Explanation: The maximum number of envelopes you can Russian doll is `3` ([2,3] => [5,4] => [6,7]).
 ```
-
 Example 2:
-
 ```
-
 Input: envelopes = [[1,1],[1,1],[1,1]]
 Output: 1
-
 ```
-
-&nbsp;
+ `envelopes[i].length == 2`
 Constraints:
-
-
-	`1 &lt;= envelopes.length &lt;= 105`
-	`envelopes[i].length == 2`
-	`1 &lt;= wi, hi &lt;= 105`
+- 1 <= envelopes.length <= 10^5
+- envelopes[i].length == 2
+- 1 i, hi <= 10^5
